@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>mission_5-1 calculator</title>
+</head>
+<body>
+    Web電卓<br>
+    
+    <!--計算表示-->
+    <input type="text" id="result" placeholder="0" disabled style=width:400px;height:100px;text-align:right;font-size:50px;><br>
+
+    <!--数字・記号ボタン-->
+    <!--1段目　Cボタン-->
+    <button onclick="clearAll()" style="width:100px;height:100px;font-size:50px;" >C</button><br>
+    <!--2段目　7,8,9,×ボタン-->
+    <button onclick="append('7')" style="width:100px;height:100px;font-size:50px;" >7</button><button onclick="append('8')" style="width:100px;height:100px;font-size:50px;">8</button><button onclick="append('9')" style="width:100px;height:100px;font-size:50px;">9</button><button onclick="append('*')" style="width:100px;height:100px;font-size:50px;">×</button><br>
+    <!--3段目　4,5,6,÷ボタン-->
+    <button onclick="append('4')" style="width:100px;height:100px;font-size:50px;" >4</button><button onclick="append('5')" style="width:100px;height:100px;font-size:50px;">5</button><button onclick="append('6')" style="width:100px;height:100px;font-size:50px;">6</button><button onclick="append('/')" style="width:100px;height:100px;font-size:50px;">÷</button><br>
+    <!--4段目　1,2,3,-ボタン-->
+    <button onclick="append('1')" style="width:100px;height:100px;font-size:50px;" >1</button><button onclick="append('2')" style="width:100px;height:100px;font-size:50px;">2</button><button onclick="append('3')" style="width:100px;height:100px;font-size:50px;">3</button><button onclick="append('-')" style="width:100px;height:100px;font-size:50px;">-</button><br>
+    <!--5段目　0,.,=,+ボタン-->
+    <button onclick="append('0')" style="width:100px;height:100px;font-size:50px;" >0</button><button onclick="append('.')" style="width:100px;height:100px;font-size:50px;">.</button><button onclick="calculate()" style="width:100px;height:100px;font-size:50px;">=</button><button onclick="append('+')" style="width:100px;height:100px;font-size:50px;">+</button><br>
+
+
+    <script src="mission_5-1 calculator.js"></script>
+</body>
+</html>
